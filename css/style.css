@@ -348,3 +348,27 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
 
 });
+/* =========================
+MOBILE MENU
+========================= */
+
+@media (max-width: 991px){
+
+    .navbar.active{
+        display:block;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#fff;
+        padding:20px;
+        box-shadow:0 5px 15px rgba(0,0,0,.1);
+    }
+
+    .navbar.active ul{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+}
