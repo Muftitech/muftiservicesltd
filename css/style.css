@@ -398,3 +398,52 @@ WHATSAPP FLOATING BUTTON
 .whatsapp-chat:hover{
     transform:scale(1.1);
 }
+/* =========================
+SCROLL TO TOP BUTTON
+========================= */
+
+.scroll-top{
+    position:fixed;
+    right:25px;
+    bottom:100px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#0b3d91;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.scroll-top:hover{
+    transform:translateY(-5px);
+}
+/* =========================
+Scroll To Top
+========================= */
+
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 300) {
+        scrollBtn.style.display = "flex";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+
+});
+
+scrollBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+});
