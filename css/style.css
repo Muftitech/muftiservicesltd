@@ -1,0 +1,16 @@
+/* =========================================
+   Mufti Services Limited
+   Official Website Styles
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    color:#222;
+}
